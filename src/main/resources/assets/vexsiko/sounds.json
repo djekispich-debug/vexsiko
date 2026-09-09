@@ -1,0 +1,379 @@
+{
+    "moan1":  {
+                  "sounds":  [
+                                 "vexsiko:hit_sounds/moan1"
+                             ]
+              },
+    "moan2":  {
+                  "sounds":  [
+                                 "vexsiko:hit_sounds/moan2"
+                             ]
+              },
+    "moan3":  {
+                  "sounds":  [
+                                 "vexsiko:hit_sounds/moan3"
+                             ]
+              },
+    "moan4":  {
+                  "sounds":  [
+                                 "vexsiko:hit_sounds/moan4"
+                             ]
+              },
+    "module_disable":  {
+                           "sounds":  [
+                                          "vexsiko:module_sounds/off"
+                                      ]
+                       },
+    "module_enable":  {
+                          "sounds":  [
+                                         "vexsiko:module_sounds/on"
+                                     ]
+                      },
+    "off":  {
+                "sounds":  [
+                               "vexsiko:module_sounds/off2"
+                           ]
+            },
+    "on":  {
+               "sounds":  [
+                              "vexsiko:module_sounds/on2"
+                          ]
+           },
+    "crime":  {
+                  "sounds":  [
+                                 "vexsiko:hit_sounds/crime"
+                             ]
+              },
+    "metallic":  {
+                     "sounds":  [
+                                    "vexsiko:hit_sounds/metallic"
+                                ]
+                 },
+    "welcome":  {
+                    "sounds":  [
+                                   "vexsiko:other/notification/notif"
+                               ]
+                },
+    "notification":  {
+                         "sounds":  [
+                                        "vexsiko:other/notification/notif"
+                                    ]
+                     },
+    "notification_low":  {
+                             "sounds":  [
+                                            "vexsiko:other/notification/low"
+                                        ]
+                         },
+    "player_ping":  {
+                        "sounds":  [
+                                       "vexsiko:other/notification/playerping"
+                                   ]
+                    },
+    "module_enable_type2":  {
+                                "sounds":  [
+                                               "vexsiko:module_sounds/on1"
+                                           ]
+                            },
+    "module_disable_type2":  {
+                                 "sounds":  [
+                                                "vexsiko:module_sounds/off1"
+                                            ]
+                             },
+    "toggle1_on":  {
+                       "sounds":  [
+                                      "vexsiko:module_sounds/toggle1_on"
+                                  ]
+                   },
+    "toggle1_off":  {
+                        "sounds":  [
+                                       "vexsiko:module_sounds/toggle1_off"
+                                   ]
+                    },
+    "mine":  {
+                 "sounds":  [
+                                "vexsiko:other/auto_mine/mine"
+                            ]
+             },
+    "accountswitch":  {
+                          "sounds":  [
+                                         "vexsiko:clickgui/switchcategory"
+                                     ]
+                      },
+    "searchtyping":  {
+                         "sounds":  [
+                                        "vexsiko:clickgui/searchtyping"
+                                    ]
+                     },
+    "slider":  {
+                   "sounds":  [
+                                  "vexsiko:clickgui/slider"
+                              ]
+               },
+    "settings_slider":  {
+                            "sounds":  [
+                                           "vexsiko:settings/slider/slider"
+                                       ]
+                        },
+    "select_category":  {
+                            "sounds":  [
+                                           "vexsiko:clickgui/select-category"
+                                       ]
+                        },
+    "open_gui":  {
+                     "sounds":  [
+                                    "vexsiko:clickgui/open-gui"
+                                ]
+                 },
+    "close_gui":  {
+                      "sounds":  [
+                                     "vexsiko:clickgui/close-gui"
+                                 ]
+                  },
+    "switchcategory":  {
+                           "sounds":  [
+                                          "vexsiko:clickgui/switchcategory"
+                                      ]
+                       },
+    "switch_left":  {
+                        "sounds":  [
+                                       "vexsiko:clickgui/switch-left"
+                                   ]
+                    },
+    "switch_right":  {
+                         "sounds":  [
+                                        "vexsiko:clickgui/switch-right"
+                                    ]
+                     },
+    "module_settings_open":  {
+                          "sounds":  [
+                                         "vexsiko:settings/openmodulesettings/module_settings_open"
+                                     ]
+                      },
+    "module_settings_close":  {
+                          "sounds":  [
+                                         "vexsiko:settings/openmodulesettings/module_settings_close"
+                                     ]
+                      },
+    "settings_open":  {
+                          "sounds":  [
+                                         "vexsiko:clickgui/settings-open"
+                                     ]
+                      },
+    "settings_close":  {
+                           "sounds":  [
+                                          "vexsiko:clickgui/settings-close"
+                                      ]
+                       },
+    "gui_category_select":  {
+                                "sounds":  [
+                                               "vexsiko:clickgui/guicategory_select"
+                                           ]
+                            },
+    "no-settings":  {
+                        "sounds":  [
+                                       "vexsiko:clickgui/no-settings"
+                                   ]
+                    },
+    "buttonclick":  {
+                        "sounds":  [
+                                       "vexsiko:clickgui/buttonclick"
+                                   ]
+                    },
+    "unknowncommand":  {
+                           "sounds":  [
+                                          "vexsiko:chat/command-error"
+                                      ]
+                       },
+    "entity.ribbit.ambient":  {
+                                  "sounds":  [
+                                                 "vexsiko:entity/ribbit_ambient1",
+                                                 "vexsiko:entity/ribbit_ambient2",
+                                                 "vexsiko:entity/ribbit_ambient3",
+                                                 "vexsiko:entity/ribbit_ambient4",
+                                                 "vexsiko:entity/ribbit_ambient5"
+                                             ]
+                              },
+    "entity.ribbit.step":  {
+                               "sounds":  [
+                                              "vexsiko:entity/ribbit_step1",
+                                              "vexsiko:entity/ribbit_step2"
+                                          ]
+                           },
+    "entity.ribbit.hurt":  {
+                               "sounds":  [
+                                              "vexsiko:entity/ribbit_hurt1",
+                                              "vexsiko:entity/ribbit_hurt2",
+                                              "vexsiko:entity/ribbit_hurt3"
+                                          ]
+                           },
+    "entity.ribbit.death":  {
+                                "sounds":  [
+                                               "vexsiko:entity/ribbit_death1",
+                                               "vexsiko:entity/ribbit_death2"
+                                           ]
+                            },
+    "guicategory_select":  {
+                               "sounds":  [
+                                              "vexsiko:clickgui/guicategory_select"
+                                          ]
+                           },
+    "settings-close":  {
+                           "sounds":  [
+                                          "vexsiko:clickgui/settings-close"
+                                      ]
+                       },
+    "settings-open":  {
+                          "sounds":  [
+                                         "vexsiko:clickgui/settings-open"
+                                     ]
+                      },
+    "switch-left":  {
+                        "sounds":  [
+                                       "vexsiko:clickgui/switch-left"
+                                   ]
+                    },
+    "switch-right":  {
+                         "sounds":  [
+                                        "vexsiko:clickgui/switch-right"
+                                    ]
+                     },
+    "ribbit_ambient1":  {
+                            "sounds":  [
+                                           "vexsiko:entity/ribbit_ambient1"
+                                       ]
+                        },
+    "ribbit_ambient2":  {
+                            "sounds":  [
+                                           "vexsiko:entity/ribbit_ambient2"
+                                       ]
+                        },
+    "ribbit_ambient3":  {
+                            "sounds":  [
+                                           "vexsiko:entity/ribbit_ambient3"
+                                       ]
+                        },
+    "ribbit_ambient4":  {
+                            "sounds":  [
+                                           "vexsiko:entity/ribbit_ambient4"
+                                       ]
+                        },
+    "ribbit_ambient5":  {
+                            "sounds":  [
+                                           "vexsiko:entity/ribbit_ambient5"
+                                       ]
+                        },
+    "ribbit_death1":  {
+                          "sounds":  [
+                                         "vexsiko:entity/ribbit_death1"
+                                     ]
+                      },
+    "ribbit_death2":  {
+                          "sounds":  [
+                                         "vexsiko:entity/ribbit_death2"
+                                     ]
+                      },
+    "ribbit_hurt1":  {
+                         "sounds":  [
+                                        "vexsiko:entity/ribbit_hurt1"
+                                    ]
+                     },
+    "ribbit_hurt2":  {
+                         "sounds":  [
+                                        "vexsiko:entity/ribbit_hurt2"
+                                    ]
+                     },
+    "ribbit_hurt3":  {
+                         "sounds":  [
+                                        "vexsiko:entity/ribbit_hurt3"
+                                    ]
+                     },
+    "ribbit_step1":  {
+                         "sounds":  [
+                                        "vexsiko:entity/ribbit_step1"
+                                    ]
+                     },
+    "ribbit_step2":  {
+                         "sounds":  [
+                                        "vexsiko:entity/ribbit_step2"
+                                    ]
+                     },
+    "off1":  {
+                 "sounds":  [
+                                "vexsiko:module_sounds/off1"
+                            ]
+             },
+    "off2":  {
+                 "sounds":  [
+                                "vexsiko:module_sounds/off2"
+                            ]
+             },
+    "on1":  {
+                "sounds":  [
+                               "vexsiko:module_sounds/on1"
+                           ]
+            },
+    "on2":  {
+                "sounds":  [
+                               "vexsiko:module_sounds/on2"
+                           ]
+            },
+    "low":  {
+                "sounds":  [
+                               "vexsiko:other/notification/low"
+                           ]
+            },
+    "notif":  {
+                  "sounds":  [
+                                 "vexsiko:other/notification/notif"
+                             ]
+              },
+    "playerping":  {
+                       "sounds":  [
+                                      "vexsiko:other/notification/playerping"
+                                  ]
+                   },
+    "frag_effect_echo_main":  {
+                                  "sounds":  [
+                                                 "vexsiko:charmsfxpack/echocharmmain"
+                                             ]
+                              },
+    "frag_effect_knock_main":  {
+                                   "sounds":  [
+                                                  "vexsiko:charmsfxpack/knockcharmmain"
+                                              ]
+                               },
+    "frag_effect_pulse":  {
+                              "sounds":  [
+                                             "vexsiko:charmsfxpack/pulsecharmdistant0",
+                                             "vexsiko:charmsfxpack/pulsecharmdistant1",
+                                             "vexsiko:charmsfxpack/pulsecharmdistant2",
+                                             "vexsiko:charmsfxpack/pulsecharmdistant3",
+                                             "vexsiko:charmsfxpack/pulsecharmdistant4"
+                                         ]
+                          },
+    "frag_effect_sparks_collision":  {
+                                         "sounds":  [
+                                                        "vexsiko:charmsfxpack/sparkscollisionneared"
+                                                    ]
+                                     },
+    "command_error":  {
+                          "sounds":  [
+                                         "vexsiko:chat/command-error"
+                                     ]
+                      },
+    "entity.nightmare_bb.hi":  {
+                                   "sounds":  [
+                                                  "vexsiko:entity/nightmare_bb/hi"
+                                              ]
+                               },
+    "entity.nightmare_bb.hello":  {
+                                      "sounds":  [
+                                                     "vexsiko:entity/nightmare_bb/hello"
+                                                 ]
+                                  },
+    "entity.nightmare_bb.laugh":  {
+                                      "sounds":  [
+                                                     "vexsiko:entity/nightmare_bb/laugh"
+                                                 ]
+                                  }
+}

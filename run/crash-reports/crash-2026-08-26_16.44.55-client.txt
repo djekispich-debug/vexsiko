@@ -1,0 +1,217 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2026-08-26 16:44:55
+Description: Bootstrap
+
+java.lang.IllegalAccessError: class net.minecraft.registry.SimpleRegistry tried to access method 'void net.minecraft.registry.entry.RegistryEntry$Reference.setRegistryKey(net.minecraft.registry.RegistryKey)' (net.minecraft.registry.SimpleRegistry and net.minecraft.registry.entry.RegistryEntry$Reference are in unnamed module of loader 'knot' @71423665)
+	at knot//net.minecraft.registry.SimpleRegistry.add(SimpleRegistry.java:119)
+	at knot//net.minecraft.registry.SimpleDefaultedRegistry.add(SimpleDefaultedRegistry.java:22)
+	at knot//net.minecraft.registry.Registry.register(Registry.java:123)
+	at knot//net.minecraft.registry.Registry.register(Registry.java:119)
+	at knot//net.minecraft.registry.Registry.register(Registry.java:115)
+	at knot//net.minecraft.fluid.Fluids.register(Fluids.java:14)
+	at knot//net.minecraft.fluid.Fluids.<clinit>(Fluids.java:7)
+	at knot//net.minecraft.block.AbstractBlock$AbstractBlockState.<init>(AbstractBlock.java:848)
+	at knot//net.minecraft.block.BlockState.<init>(BlockState.java:17)
+	at knot//net.minecraft.state.StateManager.method_28484(StateManager.java:64)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at knot//net.minecraft.state.StateManager.<init>(StateManager.java:59)
+	at knot//net.minecraft.state.StateManager$Builder.build(StateManager.java:159)
+	at knot//net.minecraft.block.Block.<init>(Block.java:255)
+	at knot//net.minecraft.block.AirBlock.<init>(AirBlock.java:20)
+	at knot//net.minecraft.block.Blocks.register(Blocks.java:1360)
+	at knot//net.minecraft.block.Blocks.register(Blocks.java:1373)
+	at knot//net.minecraft.block.Blocks.<clinit>(Blocks.java:160)
+	at knot//net.minecraft.block.FireBlock.registerDefaultFlammables(FireBlock.java:326)
+	at knot//net.minecraft.Bootstrap.initialize(Bootstrap.java:57)
+	at knot//net.minecraft.client.main.Main.main(Main.java:135)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at knot//net.minecraft.registry.SimpleRegistry.add(SimpleRegistry.java:119)
+	at knot//net.minecraft.registry.SimpleDefaultedRegistry.add(SimpleDefaultedRegistry.java:22)
+	at knot//net.minecraft.registry.Registry.register(Registry.java:123)
+	at knot//net.minecraft.registry.Registry.register(Registry.java:119)
+	at knot//net.minecraft.registry.Registry.register(Registry.java:115)
+	at knot//net.minecraft.fluid.Fluids.register(Fluids.java:14)
+	at knot//net.minecraft.fluid.Fluids.<clinit>(Fluids.java:7)
+	at knot//net.minecraft.block.AbstractBlock$AbstractBlockState.<init>(AbstractBlock.java:848)
+	at knot//net.minecraft.block.BlockState.<init>(BlockState.java:17)
+	at knot//net.minecraft.state.StateManager.method_28484(StateManager.java:64)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at knot//net.minecraft.state.StateManager.<init>(StateManager.java:59)
+	at knot//net.minecraft.state.StateManager$Builder.build(StateManager.java:159)
+	at knot//net.minecraft.block.Block.<init>(Block.java:255)
+	at knot//net.minecraft.block.AirBlock.<init>(AirBlock.java:20)
+	at knot//net.minecraft.block.Blocks.register(Blocks.java:1360)
+	at knot//net.minecraft.block.Blocks.register(Blocks.java:1373)
+	at knot//net.minecraft.block.Blocks.<clinit>(Blocks.java:160)
+	at knot//net.minecraft.block.FireBlock.registerDefaultFlammables(FireBlock.java:326)
+	at knot//net.minecraft.Bootstrap.initialize(Bootstrap.java:57)
+
+-- Initialization --
+Details:
+	Modules: 
+		ADVAPI32.dll:Расширенная библиотека API Windows 32:6.1.7601.25835 (win7sp1_ldr_escrow_im.220114-2128):Microsoft Corporation
+		CFGMGR32.dll:Configuration Manager DLL:6.1.7601.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		CLBCatQ.DLL:COM+ Configuration Catalog:2001.12.8531.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		COMCTL32.dll:Библиотека элементов управления взаимодействия с пользователем:6.10 (win7_rtm.090713-1255):Microsoft Corporation
+		CRYPTBASE.dll:Base cryptographic API DLL:6.1.7601.25835 (win7sp1_ldr_escrow_im.220114-2128):Microsoft Corporation
+		CRYPTSP.dll:Cryptographic Service Provider API:6.1.7601.24499 (win7sp1_ldr.190612-0600):Microsoft Corporation
+		DBGHELP.DLL:Windows Image Helper:6.1.7601.17514 (win7sp1_rtm.101119-1850):Microsoft Corporation
+		DEVOBJ.dll:Device Information Set DLL:6.1.7601.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		DNSAPI.dll:Динамическая библиотека API DNS-клиента:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		GDI32.dll:GDI Client DLL:6.1.7601.25822 (win7sp1_ldr_escrow.211213-1720):Microsoft Corporation
+		IMM32.dll:Multi-User Windows IMM32 API Client DLL:6.1.7601.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		IPHLPAPI.DLL:IP Helper API:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		KERNELBASE.dll:Библиотека клиента Windows NT BASE API:6.1.7601.25769 (win7sp1_ldr_escrow.211102-0226):Microsoft Corporation
+		KexDll.dll:VxKex API Extension Initialization DLL:1.2.1.2230:
+		Kx.dll:VxKex Miscellaneous API Extension DLL:1.2.1.2230:
+		LPK.dll:Language Pack:6.1.7601.25682 (win7sp1_ldr_escrow.210712-1746):Microsoft Corporation
+		MSCTF.dll:Серверная библиотека MSCTF:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		NLAapi.dll:Network Location Awareness 2:6.1.7601.24557 (win7sp1_ldr_escrow.200610-1907):Microsoft Corporation
+		NSI.dll:NSI User-mode interface DLL:6.1.7601.23889 (win7sp1_ldr.170810-1615):Microsoft Corporation
+		OLEAUT32.dll::6.1.7601.24596:Microsoft Corporation
+		POWRPROF.dll:DLL модуля поддержки профиля управления питанием:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		PSAPI.DLL:Process Status Helper:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		Pdh.dll:Модуль поддержки данных производительности Windows:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		RPCRT4.dll:Библиотека удаленного вызова процедур:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		RpcRtRemote.dll:Remote RPC Extension:6.1.7601.17514 (win7sp1_rtm.101119-1850):Microsoft Corporation
+		SETUPAPI.dll:Windows Setup API:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		SHELL32.dll:Общая библиотека оболочки Windows:6.1.7601.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		SHLWAPI.dll:Библиотека небольших программ оболочки:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		USER32.dll:Многопользовательская библиотека клиента USER API Windows:6.1.7601.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		USERENV.dll:Userenv:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		USP10.dll:Uniscribe Unicode script processor:1.0626.7601.25734 (win7sp1_ldr_escrow.210913-1723):Microsoft Corporation
+		VCRUNTIME140.dll:Microsoft® C Runtime Library:14.44.35208.0:Microsoft Corporation
+		VERSION.dll:Version Checking and File Installation Libraries:6.1.7601.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		WINMM.dll:MCI API DLL:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		WINNSI.DLL:Network Store Information RPC interface:6.1.7601.23889 (win7sp1_ldr.170810-1615):Microsoft Corporation
+		WLDAP32.dll:Win32 LDAP API DLL:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		WS2_32.dll:32-разрядная библиотека Windows Socket 2.0:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		WTSAPI32.dll:Windows Remote Desktop Session Host Server SDK APIs:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		fwpuclnt.dll:API пользовательского режима FWP/IPsec:6.1.7601.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		java.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		java.exe:OpenJDK Platform binary:21.0.12.1:Microsoft
+		jimage.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		jli.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		jna3012183363616199342.dll:JNA native library:7.0.2:Java(TM) Native Access (JNA)
+		jsvml.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		jvm.dll:OpenJDK 64-Bit server VM:21.0.12.1:Microsoft
+		kernel32.dll:Библиотека клиента Windows NT BASE API:6.1.7601.25769 (win7sp1_ldr_escrow.211102-0226):Microsoft Corporation
+		kxadvapi.DLL:VxKex Advanced API Extension DLL:1.2.1.2230:
+		kxbase.DLL:VxKex BASE API Extension DLL:1.2.1.2230:
+		kxcom.DLL:VxKex COMBASE/OLE32/WinRT Extension DLL:1.2.1.2230:
+		kxcrt.DLL:VxKex CRT Extension DLL:1.2.1.2230:
+		kxnet.DLL:VxKex Network & Internet API Extension DLL:1.2.1.2230:
+		kxnt.dll:VxKex NTAPI Forwarder DLL:1.2.1.2230:
+		kxuser.DLL:VxKex USER & Shell API Extension DLL:1.2.1.2230:
+		management.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		management_ext.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		msvcp140.dll:Microsoft® C Runtime Library:14.44.35208.0:Microsoft Corporation
+		msvcrt.dll:Windows NT CRT DLL:7.0.7601.23403 (win7sp1_ldr.160325-0600):Microsoft Corporation
+		mswsock.dll:Расширение поставщика службы API Microsoft Windows Sockets 2.0:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		napinsp.dll:Поставщик оболочки совместимости для имен электронной почты:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		net.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		nio.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		ntdll.dll:Системная библиотека NT:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		ntmarta.dll:Поставщик Windows NT MARTA:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		ole32.dll:Microsoft OLE для  Windows:6.1.7601.25757 (win7sp1_ldr_escrow.211011-1751):Microsoft Corporation
+		pnrpnsp.dll:Поставщик пространства имен PNRP:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		profapi.dll:User Profile Basic API:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		rasadhlp.dll:Remote Access AutoDial Helper:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		rsaenh.dll:Microsoft Enhanced Cryptographic Provider:6.1.7601.25623 (win7sp1_ldr.210503-1700):Microsoft Corporation
+		sechost.dll:Host for SCM/SDDL/LSA Lookup APIs:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		ucrtbase.DLL:Microsoft® C Runtime Library:10.0.19041.789 (WinBuild.160101.0800):Microsoft Corporation
+		vcruntime140_1.dll:Microsoft® C Runtime Library:14.44.35208.0:Microsoft Corporation
+		verifier.dll:Standard application verifier provider dll:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		verify.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+		webio.dll:API протоколов передачи по Веб:6.1.7601.17514 (win7sp1_rtm.101119-1850):Microsoft Corporation
+		winhttp.DLL:Службы HTTP Windows:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		winrnr.dll:LDAP RnR Provider DLL:6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		wship6.dll:Библиотека DLL помощника Winsock2 (TL/IPv6):6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		wshtcpip.dll:Библиотека DLL помощника службы Winsock2 (TL/IPv4):6.1.7600.16385 (win7_rtm.090713-1255):Microsoft Corporation
+		zip.dll:OpenJDK Platform binary:21.0.12.1:Microsoft
+Stacktrace:
+	at knot//net.minecraft.client.main.Main.main(Main.java:135)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:514)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:72)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.11
+	Minecraft Version ID: 1.21.11
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 21.0.12.1, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
+	Memory: 171060536 bytes (163 MiB) / 308281344 bytes (294 MiB) up to 3187671040 bytes (3040 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM)2 Quad CPU    Q9550  @ 2.83GHz
+	Identifier: Intel64 Family 6 Model 23 Stepping 10
+	Microarchitecture: Penryn (Client) / Penryn (Server)
+	Frequency (GHz): 2.83
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: Набор микросхем Intel(R) Q45/Q43 Express (корпорация Майкрософт - WDDM 1.1)
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1741.80
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 8.15.10.1749
+	Graphics card #1 name: NVIDIA GeForce GT 1030
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 2048.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 30.0.14.7212
+	Memory slot #0 capacity (MiB): 2048.00
+	Memory slot #0 clockSpeed (GHz): 1.07
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 1.07
+	Memory slot #1 type: Unknown
+	Memory slot #2 capacity (MiB): 2048.00
+	Memory slot #2 clockSpeed (GHz): 1.07
+	Memory slot #2 type: Unknown
+	Memory slot #3 capacity (MiB): 4096.00
+	Memory slot #3 clockSpeed (GHz): 1.07
+	Memory slot #3 type: Unknown
+	Virtual memory max (MiB): 24313.33
+	Virtual memory used (MiB): 18210.21
+	Swap memory total (MiB): 12155.74
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 14303.66, total: 75839.00
+	Space in storage for workdir (MiB): available: 6679.17, total: 76395.00
+	JVM Flags: 0 total; 
+	Debug Flags: 0 total; 
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.3.3-snapshot
+	Backend API: Unknown
+	Window size: <not initialized>
+	GFLW Platform: <error>
+	Render Extensions: ERR
+	GL debug messages: <no renderer available>
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Universe: 404
+	Type: Client (map_client.txt)
+	Locale: ru_RU
+	System encoding: Cp1251
+	File encoding: UTF-8
+	CPU: 4x Intel(R) Core(TM)2 Quad CPU Q9550 @ 2.83GHz

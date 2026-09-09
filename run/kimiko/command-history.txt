@@ -1,0 +1,4 @@
+/login detisp10
+.bind
+.help
+.reset
